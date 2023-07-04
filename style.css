@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 640px;
+}
+
+.grid {
+    background-color: aquamarine;
+    padding: 5px;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    /*vertically align text in content box*/
+    width: 30px;
+    text-align: center;
+    outline: 1px solid plum;
+}
