@@ -1,26 +1,113 @@
 body {
-    height: 100vh;
+    background-color: beige;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    font-family: 'Lobster', sans-serif;
+    color: plum;
+    font-size: 48px;
 }
 
 .wrapper {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 10px solid plum;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    outline: solid 0.5px plum;
+}
+
+.column {
+    background-color: white;
+    flex: 1;
+    outline: solid 0.5px plum;
+}
+
+.hover {
+    background-color: gray;
+}
+
+.set, .gray, .random {
+    border: 3px solid plum;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.set:hover, .gray:hover, .random:hover {
+    cursor: grab;
+}
+
+.size, .setColor {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    max-width: 640px;
+    gap: 4px;
 }
 
-.grid {
-    background-color: aquamarine;
-    padding: 5px;
-    margin: 0;
-    height: 30px;
-    line-height: 30px;
-    /*vertically align text in content box*/
-    width: 30px;
-    text-align: center;
-    outline: 1px solid plum;
+.setSize {
+    padding: 0 10px;
+}
+
+/* Followed guide on w3schools to override default CSS styles */
+/* Source: https: //www.w3schools.com/howto/howto_js_rangeslider.asp */
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1.5;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: plum;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: plum;
+    cursor: pointer;
+}
+/***************************************************************/
+
+.slideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sliderInfo, #range {
+    margin-bottom: 2px;
 }

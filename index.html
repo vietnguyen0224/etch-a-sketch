@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a sketch</title>
     <script src="./script.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <h1>Etch a sketch</h1>
+    <div class="setSize">
+        <div class="size">
+            <h3>Click or use slider to set size</h3>
+            <button class="set">Click me!!!</button>
+            <div class="slideContainer">
+                <input type="range" min="1" max="100" value="16" class="slider" id="range">
+                <p id="sliderInfo">Grid size: <span class="number"></span>*<span class="number"></span></p>
+            </div>
+        </div>
+    </div>
     <div class="wrapper"></div>
+    <div class="setColor">
+        <h3>Choose color to draw</h3>
+        <button class="gray">Gray</button>
+        <button class="random">Random</button>
+    </div>
 </body>
 
 </html>
