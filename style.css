@@ -42,7 +42,20 @@ h1 {
     background-color: gray;
 }
 
-.set, .gray, .random {
+.skyBlue {
+    background-color: skyblue;
+}
+
+.random {
+    background-color: darksalmon;
+}
+
+/* Source: https: //www.cursor.cc/?action=icon&file_id=3529 */
+.eraser:hover {
+    cursor: url('./cursor.cur'), auto;
+}
+
+.set, .blue, .random, #clear, #erase, #pen {
     border: 3px solid plum;
     border-radius: 8px;
     padding: 10px;
@@ -50,8 +63,17 @@ h1 {
     font-size: 12px;
 }
 
-.set:hover, .gray:hover, .random:hover {
+#clear, #erase, #pen {
+    padding: 20px;
+    font-size: 36px;
+}
+
+.set:hover, .blue:hover, .random:hover, #clear:hover, #erase:hover, #pen:hover {
     cursor: grab;
+}
+
+.blue {
+    background-color: skyblue;
 }
 
 .size, .setColor {
